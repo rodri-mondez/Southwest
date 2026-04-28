@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Southwest Airlines | Siéntete en las Nubes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-md shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="text-2xl font-extrabold text-blue-700 tracking-tighter">Southwest<span class="text-yellow-500">.</span></span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#beneficios" class="text-slate-600 hover:text-blue-600 font-semibold transition-colors">La Nueva Cabina</a>
+                    <a href="#experiencia" class="text-slate-600 hover:text-blue-600 font-semibold transition-colors">Tu Espacio</a>
+                    <a href="#pruébalo" class="text-slate-600 hover:text-blue-600 font-semibold transition-colors">Pruébalo Gratis</a>
+                </div>
+                <div>
+                    <a href="#" class="bg-yellow-500 hover:bg-yellow-400 text-blue-900 font-bold py-2 px-4 md:px-6 rounded-full transition-colors shadow-md text-sm md:text-base">Reservar Vuelo</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative h-screen flex items-center justify-center text-center bg-blue-900 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
+        <div class="absolute inset-0 bg-blue-900/60 bg-gradient-to-b from-blue-900/80 to-transparent mix-blend-multiply"></div>
+        
+        <div class="relative z-10 px-4 max-w-5xl mx-auto mt-16">
+            <span class="inline-block bg-yellow-400 text-blue-900 font-bold tracking-wider uppercase text-xs md:text-sm px-3 py-1 rounded-full mb-6">
+                Descubre nuestra nueva cabina
+            </span>
+            <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6 drop-shadow-md leading-tight">
+                Siéntete en las Nubes
+            </h1>
+            <p class="text-xl md:text-2xl text-blue-50 font-light mb-10 max-w-3xl mx-auto text-shadow-sm">
+                Otras aerolíneas te dan un asiento. Nosotros te damos el cielo. Disfruta de más espacio personal en cada vuelo.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#beneficios" class="bg-white text-blue-700 font-bold py-4 px-8 rounded-full hover:bg-blue-50 transition-colors shadow-xl">Conoce tu nuevo espacio</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="beneficios" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-6">Volar debería sentirse bien.</h2>
+                <p class="text-lg text-slate-600">
+                    Sabemos que el espacio personal ya es un lujo en otras partes. Por eso rediseñamos nuestras cabinas pensando en una sola cosa: tu comodidad desde el despegue hasta el aterrizaje.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-blue-50 p-8 rounded-2xl text-center card-hover">
+                    <div class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-6 text-2xl shadow-lg">
+                        <i class="fas fa-arrows-alt-h"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-900">Más anchura, cero roces</h3>
+                    <p class="text-slate-600">Más espacio para el codo. Menos codo en tu costilla. Asientos diseñados para que te relajes sin invadir ni ser invadido.</p>
+                </div>
+                <div class="bg-blue-50 p-8 rounded-2xl text-center card-hover">
+                    <div class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-6 text-2xl shadow-lg">
+                        <i class="fas fa-shoe-prints"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-900">Estira las piernas</h3>
+                    <p class="text-slate-600">Aumentamos la distancia entre filas. Trabaja en tu laptop, lee un libro o simplemente estírate como siempre has querido.</p>
+                </div>
+                <div class="bg-blue-50 p-8 rounded-2xl text-center card-hover">
+                    <div class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-6 text-2xl shadow-lg">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-900">Llega renovado</h3>
+                    <p class="text-slate-600">El estrés se queda en tierra. Nuestra nueva cabina respira amplitud para que bajes del avión sintiéndote humano otra vez.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experiencia" class="py-24 bg-blue-900 text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <h2 class="text-sm font-bold tracking-widest text-yellow-400 uppercase mb-4">Tu Espacio Personal</h2>
+            <h3 class="text-4xl md:text-5xl font-extrabold mb-10">Más aire. Más espacio. Más tú.</h3>
+            
+            <div class="grid md:grid-cols-2 gap-12 text-left mt-16 items-center">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1544644181-1484b3fdfc62?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Pasajero relajado volando" class="rounded-2xl shadow-2xl">
+                </div>
+                <div class="space-y-8">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 mt-1">
+                            <i class="fas fa-check-circle text-2xl text-yellow-400"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="text-xl font-bold mb-2">Diseñado para ti</h4>
+                            <p class="text-blue-100">Este asiento fue hecho para una persona completa, no para una parte de ella. Disfruta de la libertad de moverte.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 mt-1">
+                            <i class="fas fa-check-circle text-2xl text-yellow-400"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="text-xl font-bold mb-2">Una atmósfera tranquila</h4>
+                            <p class="text-blue-100">Iluminación adaptativa que imita la luz natural del cielo y un ambiente diseñado para desconectarte del ruido exterior.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 mt-1">
+                            <i class="fas fa-check-circle text-2xl text-yellow-400"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="text-xl font-bold mb-2">Sin costos ocultos</h4>
+                            <p class="text-blue-100">La comodidad no debería ser un extra premium. Con nosotros, un mejor asiento es el estándar en cada vuelo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pruébalo" class="py-24 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-3xl overflow-hidden shadow-xl flex flex-col md:flex-row">
+                <div class="md:w-1/2 bg-blue-100 p-12 flex flex-col justify-center">
+                    <h3 class="text-3xl font-extrabold text-blue-900 mb-4">No nos creas. Siéntelo tú mismo.</h3>
+                    <p class="text-slate-700 mb-6 text-lg">
+                        Antes de comprar tu próximo vuelo, te invitamos a probar nuestros nuevos asientos gratis. Encuentra nuestras zonas de experiencia en los principales aeropuertos y siente la diferencia al instante.
+                    </p>
+                    <ul class="space-y-3 mb-8 text-slate-600">
+                        <li><i class="fas fa-map-marker-alt text-blue-600 mr-2"></i> Terminal LAX (Los Ángeles)</li>
+                        <li><i class="fas fa-map-marker-alt text-blue-600 mr-2"></i> Terminal ORD (Chicago)</li>
+                        <li><i class="fas fa-map-marker-alt text-blue-600 mr-2"></i> Terminal DFW (Dallas)</li>
+                    </ul>
+                </div>
+                <div class="md:w-1/2 bg-cover bg-center min-h-[300px]" style="background-image: url('https://images.unsplash.com/photo-1530521954074-e64f6810b32d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');">
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-white py-16 text-center">
+        <div class="max-w-3xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-6">Tu espacio. Tu vuelo. Siéntete en las Nubes.</h2>
+            <p class="text-slate-400 mb-8">El cielo es tuyo. Descubre una forma más cálida, amplia y cómoda de viajar.</p>
+            <button class="bg-yellow-500 hover:bg-yellow-400 text-blue-900 font-bold py-4 px-10 rounded-full transition-transform hover:scale-105 shadow-lg mb-10 text-lg">
+                Busca vuelos disponibles
+            </button>
+            <div class="border-t border-slate-800 pt-8 mt-8 flex flex-col items-center text-sm text-slate-500">
+                <p>&copy; 2026 Southwest Airlines. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
